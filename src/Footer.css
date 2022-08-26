@@ -1,0 +1,145 @@
+/* Beggining of fotter */
+/* Opening hours */
+.container-footer {
+  display: flex;
+  flex-direction: row;
+}
+.opening-hours-container {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+
+.hours-adress-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.opening-hours {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  color: #243b30;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  letter-spacing: 0.02em;
+}
+.location {
+  color: #243b30;
+  margin-bottom: 10px;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  letter-spacing: 0.02em;
+}
+
+.adress {
+  margin-bottom: 3px;
+  color: #243b30;
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 17px;
+  letter-spacing: 0.02em;
+}
+.google-maps-link {
+  font-family: "Helvetica";
+  margin-bottom: 12px;
+  color: #243b30;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  letter-spacing: 0.02em;
+  text-decoration: underline;
+}
+.day-hour {
+  font-family: "Helvetica";
+  margin-top: 2px;
+  margin-bottom: 2px;
+  color: #243b30;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 17px;
+  letter-spacing: 0.02em;
+}
+.location-islington {
+  margin-top: 30px;
+}
+
+.sunday-islington {
+  margin-bottom: 100px;
+}
+/* Footer line */
+.footer-divider {
+  background-color: #bbbbbb;
+  width: 1px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+/* Contact us */
+.container-contact {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.contact-us-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-us {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  color: #243b30;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  letter-spacing: 0.02em;
+}
+.contact-location {
+  color: #243b30;
+  margin-bottom: 10px;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  letter-spacing: 0.02em;
+}
+.contact-location-islington {
+  margin-top: 25px;
+}
+.phone-number {
+  font-family: "Helvetica";
+  color: #243b30;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 27px;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+/* Footer bar*/
+.footer-bar {
+  display: flex;
+  background-color: #243b30;
+  justify-content: end;
+}
+
+.intellectual-property {
+  margin-right: 25px;
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 17px;
+  color: #fffdfd;
+}
