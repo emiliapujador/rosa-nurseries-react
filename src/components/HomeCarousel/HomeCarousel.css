@@ -1,0 +1,23 @@
+.hero1 {
+  background-image: url(./images/carousel-1.jpg);
+  width: 100%;
+  height: 600px;
+  background-size: cover;
+  background-position: center center;
+}
+
+.hero2 {
+  background-image: url(./images/carousel-2.jpg);
+  width: 100%;
+  height: 600px;
+  background-size: cover;
+  background-position: center center;
+}
+
+.hero3 {
+  background-image: url(./images/carousel-3.jpg);
+  width: 100%;
+  height: 600px;
+  background-size: cover;
+  background-position: center center;
+}
