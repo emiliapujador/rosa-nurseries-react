@@ -12,43 +12,10 @@
   margin-right: 60px;
 }
 
-.indoor-image {
-  width: 100%;
-  max-width: 500px;
-  height: 332px;
-}
-
-.border-plants {
-  /* border: 1px solid #999999; */
-}
-
 .border-plants-margin {
   margin-top: 20px;
 }
-.text-plants {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-.name-plant {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  font-family: "Times New Roman";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 19px;
-  letter-spacing: 0.02em;
-  color: #243b30;
-}
-.price-plant {
-  margin-top: 0px;
-  margin-bottom: 1px;
-  font-family: "Times New Roman";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  color: #243b30;
-}
+
 .title-container {
   height: 130px;
   display: flex;
