@@ -1,24 +1,25 @@
 import "./Navbar.css";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
     <nav class="navigation-bar">
       <div class="top-bar">
-        <a href="/">
+        <Link to="/">
           <img
             id="logo-rosa"
             class="logo"
             src="./Images/Logo/Group 1.png"
             alt="Rosa Nurseries"
           />
-        </a>
+        </Link>
       </div>
       <div class="first-line"></div>
       <div class="nav">
         <p class="navigation-line">
-          <a class="navigation-line" href="about-us.html">
+          <Link class="navigation-line" to="/about-us">
             ABOUT US
-          </a>
+          </Link>
         </p>
         <li class="navigation-line">
           <a

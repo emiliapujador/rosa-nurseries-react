@@ -1,22 +1,32 @@
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
 import logo from "./logo.svg";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import InfoHero from "./components/InfoHero";
-import IndoorSection from "./components/IndoorSection";
-import OutdoorSection from "./components/OutdoorSection";
-import HomeCarousel from "./components/HomeCarousel/HomeCarousel";
+
+//pages
+import Home from "./pages/Home";
+
+// todos
+// 1 - separar el footer y el contact us en dos componentes distintos
+// 3 - crear la pagina del about us
 
 function App() {
   return (
-    <div>
+    <Router>
       <Navbar />
-      <HomeCarousel />
-      <InfoHero />
-      <IndoorSection />
-      <OutdoorSection />
+      <Switch>
+        <Route path="/cart">
+          <h1>esto se muestra por que estan en el carrito</h1>
+        </Route>
+        <Route path="/">
+          <Home />
+        </Route>
+      </Switch>
+
       <Footer />
-    </div>
+    </Router>
   );
 }
 

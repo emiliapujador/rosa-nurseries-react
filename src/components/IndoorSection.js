@@ -1,5 +1,6 @@
 import "./PlantsSection.css";
 import PlantCard from "./PlantCard";
+import { indoorPlants } from "../data";
 
 function IndoorSection() {
   return (
