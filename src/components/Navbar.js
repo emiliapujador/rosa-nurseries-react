@@ -57,13 +57,13 @@ function Navbar() {
           </a>
         </p>
         <div class="navigation-line">
-          <a href="./signin.html">
+          <Link to="./sign-in">
             <img
               class="sing-in-icon"
               src="./Images/sing-in-icon.png"
               alt="Sign in icon"
             />
-          </a>
+          </Link>
           <Link to="/basket">
             <img class="shop-icon" src="./Images/shop.png" alt="Shop icon" />
           </Link>

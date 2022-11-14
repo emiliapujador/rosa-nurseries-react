@@ -1,0 +1,118 @@
+.full-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+.big-container-sign-in {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.small-container-sign-in {
+  display: flex;
+  flex-direction: column;
+}
+.text-sign-in {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  color: #243b30;
+  margin-top: 80px;
+  text-align: center;
+}
+.sign-in-email {
+  width: 350px;
+  margin-top: 70px;
+  margin-bottom: 5px;
+  height: 40px;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  border: solid 1px#999999;
+  margin-top: 40px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+.sign-in-password {
+  width: 350px;
+  margin-top: 70px;
+  margin-bottom: 5px;
+  height: 40px;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  border: solid 1px#999999;
+  padding: 0px;
+  margin-top: 10px;
+}
+.button-sign-in {
+  width: 350px;
+  height: 40px;
+  background-color: #243b30;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 100px;
+  border: none;
+  letter-spacing: 0.02em;
+  margin-top: 5px;
+  color: #ffffff;
+  margin-bottom: 0px;
+  cursor: pointer;
+}
+.button-sign-in:active {
+  background-color: #375748;
+}
+.text-help {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  color: #243b30;
+  margin-top: 80px;
+  text-align: center;
+}
+.line {
+  background-color: #bbbbbb;
+  height: 1px;
+  margin-top: 5px;
+}
+.new-account-text {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  color: #243b30;
+  text-align: center;
+  margin-top: 20px;
+}
+.button-create-account {
+  width: 350px;
+  height: 40px;
+  background-color: #243b30;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  border: none;
+  letter-spacing: 0.02em;
+  margin-top: 5px;
+  color: #ffffff;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-bottom: 220px;
+}
+.button-create-account:active {
+  background-color: #375748;
+}

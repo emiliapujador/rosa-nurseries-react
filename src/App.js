@@ -6,6 +6,7 @@ import Footer from "./components/Footer";
 //pages
 import Home from "./pages/Home";
 import AboutUs from "./pages/AboutUs";
+import SignIn from "./pages/SignIn";
 
 // todos
 // 3 - crear la pagina del about us
@@ -20,6 +21,9 @@ function App() {
         </Route>
         <Route exact path="/about-us">
           <AboutUs />
+        </Route>
+        <Route exact path="./sign-in">
+          <SignIn />
         </Route>
         <Route exact path="/">
           <Home />
