@@ -64,9 +64,9 @@ function Navbar() {
               alt="Sign in icon"
             />
           </a>
-          <a href="./basket.html">
+          <Link to="/basket">
             <img class="shop-icon" src="./Images/shop.png" alt="Shop icon" />
-          </a>
+          </Link>
         </div>
       </div>
     </nav>

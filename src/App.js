@@ -5,9 +5,9 @@ import Footer from "./components/Footer";
 
 //pages
 import Home from "./pages/Home";
+import AboutUs from "./pages/AboutUs";
 
 // todos
-// 1 - separar el footer y el contact us en dos componentes distintos
 // 3 - crear la pagina del about us
 
 function App() {
@@ -15,10 +15,13 @@ function App() {
     <Router>
       <Navbar />
       <Switch>
-        <Route path="/cart">
+        <Route exact path="/basket">
           <h1>esto se muestra por que estan en el carrito</h1>
         </Route>
-        <Route path="/">
+        <Route exact path="/about-us">
+          <AboutUs />
+        </Route>
+        <Route exact path="/">
           <Home />
         </Route>
       </Switch>

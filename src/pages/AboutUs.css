@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+  justify-content: center;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 800px;
+}
+.title-text {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  color: #243b30;
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+.par {
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  text-align: justify;
+  letter-spacing: 0.01em;
+  margin-top: 20px;
+  color: #000000;
+}
