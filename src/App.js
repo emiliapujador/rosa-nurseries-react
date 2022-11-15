@@ -7,6 +7,7 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import AboutUs from "./pages/AboutUs";
 import SignIn from "./pages/SignIn";
+import Basket from "./pages/Basket";
 
 // todos
 // 3 - crear la pagina del about us
@@ -17,7 +18,7 @@ function App() {
       <Navbar />
       <Switch>
         <Route exact path="/basket">
-          <h1>esto se muestra por que estan en el carrito</h1>
+          <Basket />
         </Route>
         <Route exact path="/about-us">
           <AboutUs />

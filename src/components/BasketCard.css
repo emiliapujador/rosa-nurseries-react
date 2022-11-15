@@ -1,0 +1,86 @@
+.bc-basket-card {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  padding-left: 48px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  padding-right: 28px;
+  margin-bottom: 20px;
+}
+
+.bc-plant-img {
+  width: 161px;
+  height: 201px;
+  align-self: center;
+}
+
+.bc-basket-text {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  align-items: flex-start;
+  margin-left: 64px;
+}
+
+.bc-quantity-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.bc-quantity-btn {
+  height: 40px;
+  width: 40px;
+  border: 1px solid #999999;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #000000;
+
+  /* center text inside */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bc-plant-name {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 37px;
+  color: #243b30;
+  margin-bottom: 16px;
+}
+.bc-stock {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 19px;
+  color: #000000;
+  margin: 0px;
+  flex: 1;
+}
+.bc-quantity {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 19px;
+  color: #000000;
+}
+
+.bc-card-total-price {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 19px;
+  color: #000000;
+
+  align-self: flex-end;
+}

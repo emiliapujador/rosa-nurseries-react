@@ -8711,6 +8711,11 @@ typedarray-to-buffer@^3.1.5:
   dependencies:
     is-typedarray "^1.0.0"
 
+typeface-playfair-display@^1.1.13:
+  version "1.1.13"
+  resolved "https://registry.yarnpkg.com/typeface-playfair-display/-/typeface-playfair-display-1.1.13.tgz#7f7cef9870622a6f6bd86971ea65c50b67dbf4ae"
+  integrity sha512-aOAo7NQDbdNEbBCku7i+54l5oeuttHEoa8/qJXDvPUfTIpz+PvpTDq+LeIhhh1H1RwhxurokEpIa+tYqIzZRSA==
+
 unbox-primitive@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/unbox-primitive/-/unbox-primitive-1.0.2.tgz#29032021057d5e6cdbd08c5129c226dff8ed6f9e"
