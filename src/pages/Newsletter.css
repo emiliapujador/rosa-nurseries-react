@@ -1,6 +1,7 @@
 .newsletter-section {
   display: flex;
   flex-direction: column;
+  margin-top: 50px;
 }
 .newsletter-title {
   margin: 0px;

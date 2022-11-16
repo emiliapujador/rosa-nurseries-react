@@ -4,6 +4,7 @@ import OutdoorSection from "../components/OutdoorSection";
 import IndoorSection from "../components/IndoorSection";
 import NurseryInfo from "../components/NurseryInfo";
 import Newsletter from "./Newsletter";
+import Comments from "./Comments";
 
 function Home() {
   return (
@@ -13,6 +14,7 @@ function Home() {
       <IndoorSection />
       <OutdoorSection />
       <Newsletter />
+      <Comments />
       <NurseryInfo />
     </>
   );

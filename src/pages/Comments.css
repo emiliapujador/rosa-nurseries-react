@@ -1,0 +1,53 @@
+.customers-section {
+  background-color: #f2e0be;
+  width: 100%;
+}
+.customer-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.comments-title {
+  margin: 0px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  letter-spacing: 0.02em;
+  color: #243b30;
+}
+.customers-comments {
+  display: flex;
+  flex-direction: row;
+  padding-top: 20px;
+  padding-bottom: 60px;
+}
+
+.customer-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.customer {
+  width: 280px;
+  text-align: center;
+  font-family: "Helvetica";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 15px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #243b30;
+}
+.costumer-name {
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  text-align: center;
+  color: #243b30;
+}
