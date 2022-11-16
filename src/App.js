@@ -9,6 +9,8 @@ import AboutUs from "./pages/AboutUs";
 import SignIn from "./pages/SignIn";
 import Basket from "./pages/Basket";
 import PlantDetail from "./pages/PlantDetail";
+import IndoorPlants from "./pages/IndoorPlants";
+import OutdoorPlants from "./pages/OutdoorPlants";
 
 // todos
 // 3 - crear la pagina del about us
@@ -29,6 +31,12 @@ function App() {
         </Route>
         <Route exact path="/sign-in">
           <SignIn />
+        </Route>
+        <Route exact path="/indoor-plants">
+          <IndoorPlants />
+        </Route>
+        <Route exact path="/outdoor-plants">
+          <OutdoorPlants />
         </Route>
         <Route exact path="/">
           <Home />

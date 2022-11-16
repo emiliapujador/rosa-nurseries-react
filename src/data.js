@@ -77,7 +77,7 @@ export const plants = [
   {
     name: "Hydrangea arborescens 'Incrediball'",
     price: 21.0,
-    image: "/Images/Hydrangea arborescens.jpeg",
+    image: "/Images/Hydrangea_arborescens.jpeg",
     alt: "Outdoor image 3",
     slug: "hydragea",
     description: `The "Incrediball" hydrangea  is a broadleaf, deciduous flowering shrub. It is a cultivar of the smooth hydrangea (Hydrangea arborescens)and has strong branches and big flower heads. "Incrediball" was presumably chosen as the name to trumpet the impressive size (up to 12 inches) of the "balls" of flowers."`,
@@ -91,7 +91,7 @@ export const plants = [
     price: 5.0,
     image: "/Images/outdoorPlant-4.jpeg",
     alt: "Outdoor image 4",
-    slug: "viola_vibrante",
+    slug: "viola_mixed",
     description:
       "Viola Vibrante has a huge range of bright colours. Like any other Viola variaty, is a fast-growing  garden plants with mostly small-flowered annuals or short-lived perennial violas. Many violas will come back every year thanks to self-seeding.  ",
     light: "Full sun to partial shade. ",

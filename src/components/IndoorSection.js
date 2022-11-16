@@ -1,6 +1,8 @@
 import "./PlantsSection.css";
 import PlantCard from "./PlantCard";
 import { indoorPlants } from "../data";
+import { Link } from "react-router-dom/cjs/react-router-dom.min";
+import PlantGrid from "./PlantGrid";
 
 function IndoorSection() {
   return (
@@ -24,7 +26,7 @@ function IndoorSection() {
           <PlantCard
             name="Epipremnum aureum 'Neon'"
             price="£8.50"
-            image="./Images/indoorPlant-2.jpeg"
+            image="/Images/indoorPlant-2.jpeg"
             alt="Indoor image 2"
             slug="epipremnum_aureum"
           />
@@ -40,24 +42,26 @@ function IndoorSection() {
           <PlantCard
             name="Epipremnum pinnatum"
             price="£8.00"
-            image="./Images/indoorPlant-3.jpeg"
+            image="/Images/indoorPlant-3.jpeg"
             alt="Indoor image 3"
             slug="epipremnum_pinnatum"
           />
           <PlantCard
             name="Monstera adansonii"
             price="11.00"
-            image="./Images/indoorPlant-4.jpeg"
+            image="/Images/indoorPlant-4.jpeg"
             alt="Indoor image 4"
             slug="monstera"
           />
         </div>
       </div>
-      <a href="./indoor-plant.html" target="_blank">
-        <div className="button-view-more">
-          <span>VIEW MORE</span>
+      <Link to="/indoor-plants">
+        <div className="btn-view-more-container">
+          <div className="button-view-more">
+            <span>VIEW MORE</span>
+          </div>
         </div>
-      </a>
+      </Link>
     </div>
   );
 }

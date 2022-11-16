@@ -7,7 +7,7 @@ function PlantCard(props) {
       <div className="border-plants">
         <img className="indoor-image" src={props.image} alt={props.alt} />
         <div className="text-plants">
-          <p className="name-plant">{props.name}</p>
+          <p className="pc-name-plant">{props.name}</p>
           <p className="price-plant">{props.price}</p>
         </div>
       </div>

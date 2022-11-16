@@ -1,5 +1,6 @@
 import "./PlantsSection.css";
 import PlantCard from "./PlantCard";
+import { Link } from "react-router-dom/cjs/react-router-dom.min";
 
 function OutdoorSection() {
   return (
@@ -8,7 +9,7 @@ function OutdoorSection() {
         <div className="indoor-column">
           <div className="title-container">
             <h2 className="indoor-plants-title">
-              Indoor plants
+              Outdoor plants
               <br />
               available online
             </h2>
@@ -16,7 +17,7 @@ function OutdoorSection() {
           <PlantCard
             name="Lavandula stoechas 'Lilac Wings'"
             price="£9.00"
-            image="./Images/outdoorPlant-1.jpeg "
+            image="/Images/outdoorPlant-1.jpeg "
             alt="Outdoor image 1"
             slug="lavandula"
           />
@@ -39,7 +40,7 @@ function OutdoorSection() {
           <PlantCard
             name="Hydrangea arborescens 'Incrediball'"
             price="£21.00"
-            image="./Images/Hydrangea arborescens.jpeg"
+            image="/Images/Hydrangea_arborescens.jpeg"
             alt="Outdoor image 3"
             slug="hydragea"
           />
@@ -52,11 +53,13 @@ function OutdoorSection() {
           />
         </div>
       </div>
-      <a href="./indoor-plant.html" target="_blank">
-        <div className="button-view-more">
-          <span>VIEW MORE</span>
+      <Link to="/outdoor-plants">
+        <div className="btn-view-more-container">
+          <div className="button-view-more">
+            <span>VIEW MORE</span>
+          </div>
         </div>
-      </a>
+      </Link>
     </div>
   );
 }
