@@ -14,7 +14,7 @@ export const plants = [
   {
     name: "Epipremnum aureum 'Neon'",
     slug: "epipremnum_aureum",
-    price: "£8.50",
+    price: 8.5,
     image: "/Images/indoorPlant-2.jpeg",
     alt: "Indoor image 2",
     description:
@@ -27,7 +27,7 @@ export const plants = [
   {
     name: "Epipremnum pinnatum",
     slug: "epipremnum_pinnatum",
-    price: "£8.00",
+    price: 8.0,
     image: "/Images/indoorPlant-3.jpeg",
     alt: "Indoor image 3",
     description:
@@ -52,7 +52,7 @@ export const plants = [
   },
   {
     name: "Lavandula stoechas 'Lilac Wings'",
-    price: "£9.00",
+    price: 9.0,
     image: "/Images/outdoorPlant-1.jpeg ",
     alt: "Outdoor image 1",
     slug: "lavandula",
@@ -64,7 +64,7 @@ export const plants = [
   },
   {
     name: "Rose floribunda 'Precious Ruby'",
-    price: "£50.00",
+    price: 50.0,
     image: "/Images/outdoorPlant-2.jpeg",
     alt: "Outdoor image 2",
     slug: "rose_ruby",
@@ -76,7 +76,7 @@ export const plants = [
   },
   {
     name: "Hydrangea arborescens 'Incrediball'",
-    price: "£21.00",
+    price: 21.0,
     image: "/Images/Hydrangea arborescens.jpeg",
     alt: "Outdoor image 3",
     slug: "hydragea",
@@ -88,7 +88,7 @@ export const plants = [
   },
   {
     name: "Viola Vibrante Mixed",
-    price: "5.00",
+    price: 5.0,
     image: "/Images/outdoorPlant-4.jpeg",
     alt: "Outdoor image 4",
     slug: "viola_vibrante",
