@@ -5,13 +5,13 @@ function HomeCarousel() {
   return (
     <Carousel>
       <Carousel.Item>
-        <div class="hero1"></div>
+        <div className="hero1"></div>
       </Carousel.Item>
       <Carousel.Item>
-        <div class="hero2"></div>
+        <div className="hero2"></div>
       </Carousel.Item>
       <Carousel.Item>
-        <div class="hero3"></div>
+        <div className="hero3"></div>
       </Carousel.Item>
     </Carousel>
   );

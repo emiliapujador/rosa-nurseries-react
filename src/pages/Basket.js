@@ -28,12 +28,12 @@ function Basket() {
   } else {
     return (
       <main>
-        <div class="bkt-empty-container">
-          <span class="basket-text">BASKET</span>
-          <div class="line"></div>
-          <span class="basket-info">Your basket is empty</span>
+        <div className="bkt-empty-container">
+          <span className="basket-text">BASKET</span>
+          <div className="line"></div>
+          <span className="basket-info">Your basket is empty</span>
           <Link to="/">
-            <button class="shop-button">CONTINUE SHOPPING</button>
+            <button className="shop-button">CONTINUE SHOPPING</button>
           </Link>
         </div>
       </main>

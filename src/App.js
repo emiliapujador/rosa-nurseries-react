@@ -8,6 +8,7 @@ import Home from "./pages/Home";
 import AboutUs from "./pages/AboutUs";
 import SignIn from "./pages/SignIn";
 import Basket from "./pages/Basket";
+import PlantDetail from "./pages/PlantDetail";
 
 // todos
 // 3 - crear la pagina del about us
@@ -23,7 +24,10 @@ function App() {
         <Route exact path="/about-us">
           <AboutUs />
         </Route>
-        <Route exact path="./sign-in">
+        <Route exact path="/plant/:slug">
+          <PlantDetail />
+        </Route>
+        <Route exact path="/sign-in">
           <SignIn />
         </Route>
         <Route exact path="/">

@@ -3,7 +3,7 @@ import "./BasketCard.css";
 function BasketCard() {
   return (
     <div className="bc-basket-card">
-      <img className="bc-plant-img" src="./Images/indoorPlant-1.jpeg" />
+      <img className="bc-plant-img" src="/Images/indoorPlant-1.jpeg" />
       <div className="bc-basket-text">
         <h3 className="bc-plant-name">Name of the plant</h3>
         <p className="bc-stock">Currently in stock online</p>

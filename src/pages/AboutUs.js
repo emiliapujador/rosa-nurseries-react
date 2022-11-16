@@ -3,16 +3,16 @@ import "./AboutUs.css";
 function AboutUs() {
   return (
     <main>
-      <div class="container">
-        <div class="content">
-          <h1 class="title-text">ABOUT US</h1>
+      <div className="container">
+        <div className="content">
+          <h1 className="title-text">ABOUT US</h1>
           <a href="./signin.html"></a>
           <img
-            class="aboutus-image1"
+            className="aboutus-image1"
             src="./Images/aboutus-image1.webp"
             alt="About Us Image"
           />
-          <p class="par">
+          <p className="par">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Pulvinar
             mattis nunc sed blandit libero volutpat. Accumsan in nisl nisi
@@ -28,7 +28,7 @@ function AboutUs() {
             magna fermentum iaculis eu.Commodo viverra maecenas accumsan lacus.
           </p>
 
-          <p class="par">
+          <p className="par">
             Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
             incididunt ut labore et dolore magna aliqua. Pulvinar mattis nunc
             sed blandit libero volutpat. Accumsan in nisl nisi scelerisque eu

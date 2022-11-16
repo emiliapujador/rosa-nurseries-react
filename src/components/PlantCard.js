@@ -1,16 +1,17 @@
 import "./PlantCard.css";
+import { Link } from "react-router-dom";
 
 function PlantCard(props) {
   return (
-    <a href="./maranta.html">
-      <div class="border-plants">
-        <img class="indoor-image" src={props.image} alt={props.alt} />
-        <div class="text-plants">
-          <p class="name-plant">{props.name}</p>
-          <p class="price-plant">{props.price}</p>
+    <Link to={"/plant/" + props.slug}>
+      <div className="border-plants">
+        <img className="indoor-image" src={props.image} alt={props.alt} />
+        <div className="text-plants">
+          <p className="name-plant">{props.name}</p>
+          <p className="price-plant">{props.price}</p>
         </div>
       </div>
-    </a>
+    </Link>
   );
 }
 

@@ -3,27 +3,27 @@ import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
-    <nav class="navigation-bar">
-      <div class="top-bar">
+    <nav className="navigation-bar">
+      <div className="top-bar">
         <Link to="/">
           <img
             id="logo-rosa"
-            class="logo"
-            src="./Images/Logo/Group 1.png"
+            className="logo"
+            src="/Images/Logo/Group 1.png"
             alt="Rosa Nurseries"
           />
         </Link>
       </div>
-      <div class="first-line"></div>
-      <div class="nav">
-        <p class="navigation-line">
-          <Link class="navigation-line" to="/about-us">
+      <div className="first-line"></div>
+      <div className="nav">
+        <p className="navigation-line">
+          <Link className="navigation-line" to="/about-us">
             ABOUT US
           </Link>
         </p>
-        <li class="navigation-line">
+        <li className="navigation-line">
           <a
-            class="dropdown"
+            className="dropdown"
             href="#"
             id="navbarDropdown"
             data-bs-toggle="dropdown"
@@ -31,41 +31,41 @@ function Navbar() {
           >
             SHOP ONLINE
           </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
             <li>
-              <a class="dropdown-item" href="./indoor-plant.html">
+              <a className="dropdown-item" href="./indoor-plant.html">
                 Indoor plants
               </a>
             </li>
             <li>
-              <a class="dropdown-item" href="./outdoor-plants.html">
+              <a className="dropdown-item" href="./outdoor-plants.html">
                 Outdoor plants
               </a>
             </li>
           </ul>
         </li>
-        <p class="navigation-line">
-          <a class="navigation-line" href="/#opening-hours">
+        <p className="navigation-line">
+          <a className="navigation-line" href="/#opening-hours">
             {" "}
             OPENING HOURS
           </a>
         </p>
-        <p class="navigation-line">
-          <a class="navigation-line" href="/#contact-us">
+        <p className="navigation-line">
+          <a className="navigation-line" href="/#contact-us">
             {" "}
             CONTACT US
           </a>
         </p>
-        <div class="navigation-line">
-          <Link to="./sign-in">
+        <div className="navigation-line">
+          <Link to="/sign-in">
             <img
-              class="sing-in-icon"
-              src="./Images/sing-in-icon.png"
+              className="sing-in-icon"
+              src="/Images/sing-in-icon.png"
               alt="Sign in icon"
             />
           </Link>
           <Link to="/basket">
-            <img class="shop-icon" src="./Images/shop.png" alt="Shop icon" />
+            <img className="shop-icon" src="/Images/shop.png" alt="Shop icon" />
           </Link>
         </div>
       </div>
