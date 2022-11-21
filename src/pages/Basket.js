@@ -2,11 +2,15 @@ import "./Basket.css";
 import { Link } from "react-router-dom";
 import BasketCard from "../components/BasketCard";
 import SummaryCard from "../components/SummaryCard";
+import { useContext } from "react";
+import { DataProvider } from "../DataProvider";
 
 function Basket() {
-  const basketHasItems = true;
+  const dataProvider = useContext(DataProvider);
 
-  if (basketHasItems) {
+  const cart = dataProvider.cart;
+
+  if (cart.length > 0) {
     return (
       <div className="bkt-container-items">
         <div className="bkt-title-items">
@@ -15,9 +19,9 @@ function Basket() {
         </div>
         <div className="bkt-summary-container">
           <div className="bkt-card-container">
-            <BasketCard />
-            <BasketCard />
-            <BasketCard />
+            {cart.map((item) => {
+              return <BasketCard cartItem={item} />;
+            })}
           </div>
           <div className="bkt-summary-card-container">
             <SummaryCard />

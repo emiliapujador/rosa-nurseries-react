@@ -1,14 +1,24 @@
+import { useContext, useState } from "react";
 import { useParams } from "react-router-dom";
 import { plants } from "../data";
+import { DataProvider } from "../DataProvider";
 import "./PlantDetail.css";
 
 function PlantDetail() {
   const params = useParams();
+  const [quantity, setQuantity] = useState(1);
+  const dataProvider = useContext(DataProvider);
 
   // buscamos la planta que tenga el slug correcto
-  const plant = plants.find(function (plant) {
-    return plant.slug === params.slug;
-  });
+  const plant = plants.find((plant) => plant.slug === params.slug);
+
+  const onQuantityUpdate = (event) => {
+    setQuantity(parseInt(event.target.value));
+  };
+
+  function addToCart() {
+    dataProvider.addItemToCart(plant.slug, quantity);
+  }
 
   // the plant doesn't exist
   if (plant === undefined) {
@@ -51,19 +61,25 @@ function PlantDetail() {
             </div>
             <span className="instruction-text">{plant.feed}</span>
             <div className="add-to-cart">
-              <select className="add-to-cart-select">
+              <select
+                className="add-to-cart-select"
+                value={quantity}
+                onChange={onQuantityUpdate}
+              >
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
                 <option value="4">4</option>
                 <option value="5">5</option>
-                <option value="5">6</option>
-                <option value="5">7</option>
-                <option value="5">8</option>
-                <option value="5">9</option>
-                <option value="5">10</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
               </select>
-              <button className="add-to-cart-button">ADD TO CART</button>
+              <button className="add-to-cart-button" onClick={addToCart}>
+                ADD TO CART
+              </button>
             </div>
           </div>
         </div>

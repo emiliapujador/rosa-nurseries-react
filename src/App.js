@@ -11,40 +11,73 @@ import Basket from "./pages/Basket";
 import PlantDetail from "./pages/PlantDetail";
 import IndoorPlants from "./pages/IndoorPlants";
 import OutdoorPlants from "./pages/OutdoorPlants";
-
-// todos
-// 3 - crear la pagina del about us
+import { DataProvider } from "./DataProvider";
+import { useState } from "react";
 
 function App() {
-  return (
-    <Router>
-      <Navbar />
-      <Switch>
-        <Route exact path="/basket">
-          <Basket />
-        </Route>
-        <Route exact path="/about-us">
-          <AboutUs />
-        </Route>
-        <Route exact path="/plant/:slug">
-          <PlantDetail />
-        </Route>
-        <Route exact path="/sign-in">
-          <SignIn />
-        </Route>
-        <Route exact path="/indoor-plants">
-          <IndoorPlants />
-        </Route>
-        <Route exact path="/outdoor-plants">
-          <OutdoorPlants />
-        </Route>
-        <Route exact path="/">
-          <Home />
-        </Route>
-      </Switch>
+  const [cart, setCart] = useState([]);
 
-      <Footer />
-    </Router>
+  function addItemToCart(plantId, quantity) {
+    const newItem = {
+      plantId: plantId,
+      quantity: quantity,
+    };
+    cart.push(newItem);
+    setCart(cart);
+  }
+
+  function deleteItem(plantId) {
+    const newCart = cart.filter((item) => item.plantId !== plantId);
+    setCart(newCart);
+  }
+
+  function updateItemQuantity(plantId, quantity) {
+    for (const cartItem of cart) {
+      if (cartItem.plantId === plantId) {
+        cartItem.quantity = quantity;
+      }
+    }
+    setCart([...cart]);
+  }
+
+  return (
+    <DataProvider.Provider
+      value={{
+        cart,
+        addItemToCart,
+        deleteItem,
+        updateItemQuantity,
+      }}
+    >
+      <Router>
+        <Navbar />
+        <Switch>
+          <Route exact path="/basket">
+            <Basket />
+          </Route>
+          <Route exact path="/about-us">
+            <AboutUs />
+          </Route>
+          <Route exact path="/plant/:slug">
+            <PlantDetail />
+          </Route>
+          <Route exact path="/sign-in">
+            <SignIn />
+          </Route>
+          <Route exact path="/indoor-plants">
+            <IndoorPlants />
+          </Route>
+          <Route exact path="/outdoor-plants">
+            <OutdoorPlants />
+          </Route>
+          <Route exact path="/">
+            <Home />
+          </Route>
+        </Switch>
+
+        <Footer />
+      </Router>
+    </DataProvider.Provider>
   );
 }
 

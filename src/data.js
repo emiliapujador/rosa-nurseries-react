@@ -21,7 +21,7 @@ export const plants = [
       "This Epipremnum is characterised by pointed, heart shaped green leaves with hints of white variegation and is a wonderful way to add some freshness and height to your home.",
     light: "Indirect sunlight.",
     water:
-      "Medium. Requires watering only when the first quarter inch of soil begins to feel dry to the touch ",
+      "Medium. Requires watering only when the first quarter inch of soil begins to feel dry to the touch. ",
     feed: "Apply a balanced liquid fertilizer once a month from the early spring to late summer.",
   },
   {

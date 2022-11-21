@@ -1,4 +1,5 @@
 import "./NurseryInfo.css";
+import mapPineLine from "../images/map-pin-line.png";
 
 function NurseryInfo() {
   return (
@@ -6,7 +7,10 @@ function NurseryInfo() {
       <div id="opening-hours" className="opening-hours-container">
         <div className="hours-adress-container">
           <span className="opening-hours">Opening Hours</span>
-          <span className="location location-chelsea">Chelsea</span>
+          <div className="container-adress-png">
+            <img className="address-logo" src={mapPineLine} />
+            <span className="location location-chelsea">Chelsea</span>
+          </div>
           <span className="adress adress-chelsea">
             XXX Street, SW10 0BA, London
           </span>
@@ -17,11 +21,12 @@ function NurseryInfo() {
           >
             <span>Google Maps</span>
           </a>
-          <span className="day-hour">Monday to Thursday 10am-5pm</span>
-          <span className="day-hour">Friday 10am-6pm</span>
-          <span className="day-hour">Saturday 10am-7pm</span>
+          <span className="day-hour">Monday - Sunday: 9AM - 4PM</span>
           <span className="day-hour">Sunday Closed</span>
-          <span className="location location-islington">Islington</span>
+          <div className="container-address-png">
+            <img className="address-logo" src={mapPineLine} />
+            <span className="location location-islington">Islington</span>
+          </div>
           <span className="adress adress-chelsea">
             XXX Street, E8 2BB, London
           </span>
@@ -32,9 +37,7 @@ function NurseryInfo() {
           >
             <span>Google Maps</span>
           </a>
-          <span className="day-hour">Monday to Thursday 10am-5pm</span>
-          <span className="day-hour">Friday 10am-6pm</span>
-          <span className="day-hour">Saturday 10am-7pm</span>
+          <span className="day-hour">Monday - Sunday: 9AM - 4PM</span>
           <span className="day-hour sunday-islington">Sunday 10am-1pm</span>
         </div>
       </div>
