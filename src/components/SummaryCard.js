@@ -1,6 +1,13 @@
 import "./SummaryCard.css";
+import { getFinalPrice } from "../utility";
+import { useContext } from "react";
+import { DataProvider } from "../DataProvider";
 
 function SummaryCard() {
+  const dataProvider = useContext(DataProvider);
+
+  const finalPrice = getFinalPrice(dataProvider.cart);
+
   return (
     <div>
       <div className="summary-container">
@@ -15,7 +22,7 @@ function SummaryCard() {
         <div className="summary-line"></div>
         <div className="summary-total">
           <p className="summary-total-text">Total</p>
-          <p className="summary=total-price">£1</p>
+          <p className="summary=total-price">£{finalPrice}</p>
         </div>
         <button className="summary-btn">Continue to check out</button>
       </div>
