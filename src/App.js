@@ -52,6 +52,12 @@ function App() {
       <Router>
         <Navbar />
         <Switch>
+          {/* <Route exact path="/indoor-plants">
+            <IndoorPlants />
+          </Route>
+          <Route exact path="/outdoor-plants">
+            <OutdoorPlants />
+          </Route> */}
           <Route exact path="/basket">
             <Basket />
           </Route>

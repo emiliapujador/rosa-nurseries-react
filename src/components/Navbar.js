@@ -1,5 +1,7 @@
 import "./Navbar.css";
 import { Link } from "react-router-dom";
+import Nav from "react-bootstrap/Nav";
+import NavDropdown from "react-bootstrap/NavDropdown";
 
 function Navbar() {
   return (
@@ -21,29 +23,19 @@ function Navbar() {
             ABOUT US
           </Link>
         </p>
-        <li className="navigation-line">
-          <a
-            className="dropdown"
-            href="#"
-            id="navbarDropdown"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-          >
-            SHOP ONLINE
-          </a>
-          <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li>
-              <a className="dropdown-item" href="./indoor-plant.html">
-                Indoor plants
-              </a>
-            </li>
-            <li>
-              <a className="dropdown-item" href="./outdoor-plants.html">
-                Outdoor plants
-              </a>
-            </li>
-          </ul>
-        </li>
+        <NavDropdown
+          className="dropdown navigation-line"
+          title="SHOP ONLINE"
+          id="nav-dropdown"
+        >
+          <NavDropdown.Item eventKey="4.1">
+            <Link to="/indoor-plants">Indoor plants</Link>
+          </NavDropdown.Item>
+
+          <NavDropdown.Item eventKey="4.2">
+            <Link to="/outdoor-plants">Outdoor plants</Link>
+          </NavDropdown.Item>
+        </NavDropdown>
         <p className="navigation-line">
           <a className="navigation-line" href="/#opening-hours">
             {" "}

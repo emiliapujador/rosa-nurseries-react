@@ -40,6 +40,9 @@
   font-size: 17px;
   margin: 0;
 }
+.nav-link {
+  color: #243b3c;
+}
 .navigation-line:active {
   color: #589578;
 }
