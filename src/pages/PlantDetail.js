@@ -1,5 +1,5 @@
 import { useContext, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useHistory } from "react-router-dom";
 import { plants } from "../data";
 import { DataProvider } from "../DataProvider";
 import "./PlantDetail.css";
@@ -8,6 +8,8 @@ function PlantDetail() {
   const params = useParams();
   const [quantity, setQuantity] = useState(1);
   const dataProvider = useContext(DataProvider);
+
+  const history = useHistory();
 
   // buscamos la planta que tenga el slug correcto
   const plant = plants.find((plant) => plant.slug === params.slug);
@@ -18,6 +20,7 @@ function PlantDetail() {
 
   function addToCart() {
     dataProvider.addItemToCart(plant.slug, quantity);
+    history.push("/basket");
   }
 
   // the plant doesn't exist

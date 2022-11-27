@@ -18,12 +18,28 @@ function App() {
   const [cart, setCart] = useState([]);
 
   function addItemToCart(plantId, quantity) {
-    const newItem = {
-      plantId: plantId,
-      quantity: quantity,
-    };
-    cart.push(newItem);
-    setCart(cart);
+    // if item is already in the cart just increase the quantity by one
+    if (cart.find((item) => item.plantId === plantId)) {
+      setCart(
+        cart.map((item) => {
+          if (item.plantId === plantId) {
+            return {
+              plantId: item.plantId,
+              quantity: item.quantity + quantity,
+            };
+          }
+          return item;
+        })
+      );
+    } else {
+      // otherwise push new item to the cart array
+      const newItem = {
+        plantId: plantId,
+        quantity: quantity,
+      };
+      cart.push(newItem);
+      setCart(cart);
+    }
   }
 
   function deleteItem(plantId) {
