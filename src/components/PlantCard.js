@@ -8,7 +8,7 @@ function PlantCard(props) {
         <img className="indoor-image" src={props.image} alt={props.alt} />
         <div className="text-plants">
           <p className="pc-name-plant">{props.name}</p>
-          <p className="price-plant">{props.price}</p>
+          <p className="price-plant">£{props.price}</p>
         </div>
       </div>
     </Link>

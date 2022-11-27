@@ -9,7 +9,7 @@ function OutdoorPlants() {
           Outdoor plants <br></br> available online
         </h1>
       </div>
-      <PlantGrid />;
+      <PlantGrid kind="outdoor" />
       <div className="outdoor-plants-add-info">
         <h3 className="outdoor-plants-add-text">
           More outdoor plants coming soon...

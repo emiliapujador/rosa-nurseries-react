@@ -9,7 +9,7 @@ function IndoorPlants() {
           Indoor plants <br></br> available online
         </h1>
       </div>
-      <PlantGrid />;
+      <PlantGrid kind="indoor" />
       <div className="indoor-plants-add-info">
         <h3 className="indoor-plants-add-text">
           More indoor plants coming soon...

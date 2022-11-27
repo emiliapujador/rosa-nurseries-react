@@ -1,6 +1,7 @@
 export const plants = [
   {
     name: "Maranta leuconeura",
+    kind: "indoor",
     slug: "maranta",
     price: 9.0,
     image: "/Images/indoorPlant-1.jpeg",
@@ -13,6 +14,7 @@ export const plants = [
   },
   {
     name: "Epipremnum aureum 'Neon'",
+    kind: "indoor",
     slug: "epipremnum_aureum",
     price: 8.5,
     image: "/Images/indoorPlant-2.jpeg",
@@ -27,6 +29,7 @@ export const plants = [
   {
     name: "Epipremnum pinnatum",
     slug: "epipremnum_pinnatum",
+    kind: "indoor",
     price: 8.0,
     image: "/Images/indoorPlant-3.jpeg",
     alt: "Indoor image 3",
@@ -40,6 +43,7 @@ export const plants = [
   {
     name: "Monstera adansonii",
     slug: "monstera",
+    kind: "indoor",
     price: 11.0,
     image: "/Images/indoorPlant-4.jpeg",
     alt: "Indoor image 4",
@@ -52,6 +56,7 @@ export const plants = [
   },
   {
     name: "Lavandula stoechas 'Lilac Wings'",
+    kind: "outdoor",
     price: 9.0,
     image: "/Images/outdoorPlant-1.jpeg ",
     alt: "Outdoor image 1",
@@ -65,6 +70,7 @@ export const plants = [
   {
     name: "Rose floribunda 'Precious Ruby'",
     price: 50.0,
+    kind: "outdoor",
     image: "/Images/outdoorPlant-2.jpeg",
     alt: "Outdoor image 2",
     slug: "rose_ruby",
@@ -77,6 +83,7 @@ export const plants = [
   {
     name: "Hydrangea arborescens 'Incrediball'",
     price: 21.0,
+    kind: "outdoor",
     image: "/Images/Hydrangea_arborescens.jpeg",
     alt: "Outdoor image 3",
     slug: "hydragea",
@@ -89,6 +96,7 @@ export const plants = [
   {
     name: "Viola Vibrante Mixed",
     price: 5.0,
+    kind: "outdoor",
     image: "/Images/outdoorPlant-4.jpeg",
     alt: "Outdoor image 4",
     slug: "viola_mixed",
