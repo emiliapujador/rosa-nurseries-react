@@ -27,7 +27,12 @@ function BasketCard(props) {
 
   return (
     <div className="bc-basket-card">
-      <img className="bc-plant-img" src={plant.image} />
+      <div
+        className="bc-plant-img"
+        style={{
+          backgroundImage: `url(${plant.image})`,
+        }}
+      />
       <div className="bc-basket-text">
         <h3 className="bc-plant-name">{plant.name}</h3>
         <p className="bc-stock">Currently in stock online</p>

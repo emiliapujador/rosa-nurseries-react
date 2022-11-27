@@ -1,6 +1,6 @@
 .plants-grid {
   display: grid;
-  grid-template-columns: 540px 540px;
+  grid-template-columns: 500px 500px;
   grid-template-rows: auto auto;
   column-gap: 120px;
   row-gap: 40px;

@@ -11,8 +11,8 @@
 
 .bc-plant-img {
   width: 161px;
-  height: 201px;
-  align-self: center;
+  height: 100%;
+  background-size: cover;
 }
 
 .bc-basket-text {
