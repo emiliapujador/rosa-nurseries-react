@@ -28,3 +28,9 @@
   margin-top: 20px;
   color: #000000;
 }
+@media only screen and (max-width: 600px) {
+  .about-us-par {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}

@@ -23,7 +23,7 @@ function NurseryInfo() {
           </a>
           <span className="day-hour">Monday - Sunday: 9AM - 4PM</span>
           <span className="day-hour">Sunday Closed</span>
-          <div className="container-address-png">
+          <div className="container-address-png container-address-png-islington ">
             <img className="address-logo" src={mapPineLine} />
             <span className="location location-islington">Islington</span>
           </div>

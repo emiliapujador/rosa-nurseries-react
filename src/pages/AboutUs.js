@@ -28,7 +28,7 @@ function AboutUs() {
             magna fermentum iaculis eu.Commodo viverra maecenas accumsan lacus.
           </p>
 
-          <p className="par">
+          <p className="about-us-par">
             Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
             incididunt ut labore et dolore magna aliqua. Pulvinar mattis nunc
             sed blandit libero volutpat. Accumsan in nisl nisi scelerisque eu

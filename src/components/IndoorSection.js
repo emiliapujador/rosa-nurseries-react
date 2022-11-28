@@ -6,7 +6,7 @@ import PlantGrid from "./PlantGrid";
 
 function IndoorSection() {
   return (
-    <div>
+    <>
       <div className="plants-section">
         <div className="indoor-column">
           <div className="title-container">
@@ -27,7 +27,9 @@ function IndoorSection() {
           </div>
         </div>
       </div>
-      <PlantGrid kind="indoor" />
+      <div className="center-grid">
+        <PlantGrid kind="indoor" />
+      </div>
       <Link to="/indoor-plants">
         <div className="btn-view-more-container">
           <div className="button-view-more">
@@ -35,7 +37,7 @@ function IndoorSection() {
           </div>
         </div>
       </Link>
-    </div>
+    </>
   );
 }
 

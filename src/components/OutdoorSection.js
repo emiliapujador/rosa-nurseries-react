@@ -19,14 +19,16 @@ function OutdoorSection() {
         <div className="indoor-column">
           <div className="title-container title-container-center">
             <h2 className="plants-characteristics">
-              Different shapes and sizes to light
+              Different foliage, sizes and heights
               <br />
-              up every corner of your home
+              to embelish your garden
             </h2>
           </div>
         </div>
       </div>
-      <PlantGrid kind="outdoor" />
+      <div className="center-grid">
+        <PlantGrid kind="outdoor" />
+      </div>
       <Link to="/outdoor-plants">
         <div className="btn-view-more-container">
           <div className="button-view-more">

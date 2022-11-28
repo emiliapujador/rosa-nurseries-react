@@ -8,18 +8,16 @@ function PlantGrid(props) {
   });
 
   return (
-    <div className="plants-section">
-      <div className="plants-grid">
-        {filteredPlants.map((plant) => (
-          <PlantCard
-            name={plant.name}
-            price={plant.price}
-            image={plant.image}
-            alt={plant.alt}
-            slug={plant.slug}
-          />
-        ))}
-      </div>
+    <div className="plants-grid">
+      {filteredPlants.map((plant) => (
+        <PlantCard
+          name={plant.name}
+          price={plant.price}
+          image={plant.image}
+          alt={plant.alt}
+          slug={plant.slug}
+        />
+      ))}
     </div>
   );
 }
