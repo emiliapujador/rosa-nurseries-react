@@ -30,3 +30,18 @@
   line-height: 43px;
   color: #243b30;
 }
+@media only screen and (max-width: 600px) {
+  .outdoor-plants-section-text {
+    font-size: 24px;
+    line-height: 40px;
+  }
+  .outdoor-plants-add-text {
+    font-size: 19px;
+    margin-top: 10px;
+  }
+  .outdoor-plants-section-text {
+    font-size: 22px;
+    line-height: 30px;
+    margin-bottom: 30px;
+  }
+}

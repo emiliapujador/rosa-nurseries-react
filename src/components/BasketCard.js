@@ -37,20 +37,22 @@ function BasketCard(props) {
         <h3 className="bc-plant-name">{plant.name}</h3>
         <p className="bc-stock">Currently in stock online</p>
         <p className="bc-quantity">Quantity</p>
-        <div className="bc-quantity-buttons">
-          <div className="bc-quantity-btn" onClick={decrease}>
-            <span>-</span>
+        <div className="bc-container-quantity-price">
+          <div className="bc-quantity-buttons">
+            <div className="bc-quantity-btn" onClick={decrease}>
+              <span>-</span>
+            </div>
+            <div className="bc-quantity-btn">
+              <span>{cartItem.quantity}</span>
+            </div>
+            <div className="bc-quantity-btn" onClick={increase}>
+              <span>+</span>
+            </div>
           </div>
-          <div className="bc-quantity-btn">
-            <span>{cartItem.quantity}</span>
-          </div>
-          <div className="bc-quantity-btn" onClick={increase}>
-            <span>+</span>
+          <div className="bc-card-total-price bc-quantity-buttons">
+            <span>£{plant.price * cartItem.quantity}</span>
           </div>
         </div>
-      </div>
-      <div className="bc-card-total-price">
-        <span>£{plant.price * cartItem.quantity}</span>
       </div>
     </div>
   );

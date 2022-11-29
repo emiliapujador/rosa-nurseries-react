@@ -14,12 +14,15 @@
   height: 100%;
   background-size: cover;
 }
-
+.bc-container-quantity-price {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 .bc-basket-text {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  align-items: flex-start;
   margin-left: 64px;
 }
 

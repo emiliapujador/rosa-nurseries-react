@@ -49,17 +49,17 @@ function PlantDetail() {
             </div>
             <p className="plants-car">{plant.description}</p>
             <div className="care-instruction">
-              <img className="icon" src="/Images/sun.png" />
+              <img className="plant-detail-icon" src="/Images/sun.png" />
               <span className="care-text">Light needed</span>
             </div>
             <span className="instruction-text">{plant.light}</span>
             <div className="care-instruction">
-              <img className="icon" src="/Images/water.png" />
+              <img className="plant-detail-icon" src="/Images/water.png" />
               <span className="care-text">Watering</span>
             </div>
             <span className="instruction-text">{plant.water}</span>
             <div className="care-instruction">
-              <img className="icon" src="/Images/food.png" />
+              <img className="plant-detail-icon" src="/Images/food.png" />
               <span className="care-text">Feeding</span>
             </div>
             <span className="instruction-text">{plant.feed}</span>
