@@ -3,7 +3,7 @@ import "./OutdoorPlants.css";
 
 function OutdoorPlants() {
   return (
-    <div>
+    <div className="outdoor-plants-container">
       <div className="outdoor-plants-title-container">
         <h1 className="outdoor-plants-section-text">
           Outdoor plants <br></br> available online

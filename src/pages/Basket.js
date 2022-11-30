@@ -12,19 +12,20 @@ function Basket() {
 
   if (cart.length > 0) {
     return (
-      <div className="bkt-container-items">
-        <div className="bkt-title-items">
-          <h3 className="bkt-title">BASKET</h3>
-          <h2 className="bkt-items">1 Item</h2>
-        </div>
-        <div className="bkt-summary-container">
-          <div className="bkt-card-container">
-            {cart.map((item) => {
-              return <BasketCard cartItem={item} />;
-            })}
+      <div className="bkt-container-items-summary">
+        <div className="bkt-container-items">
+          <div className="bkt-title-items">
+            <h3 className="bkt-title">BASKET</h3>
           </div>
-          <div className="bkt-summary-card-container">
-            <SummaryCard />
+          <div className="bkt-summary-container">
+            <div className="bkt-card-container">
+              {cart.map((item) => {
+                return <BasketCard cartItem={item} />;
+              })}
+            </div>
+            <div className="bkt-summary-card-container">
+              <SummaryCard />
+            </div>
           </div>
         </div>
       </div>

@@ -3,7 +3,7 @@ import "./IndoorPlants.css";
 
 function IndoorPlants() {
   return (
-    <div>
+    <div className="indoor-plants-container">
       <div className="indoor-plants-title-container">
         <h1 className="indoor-plants-section-text">
           Indoor plants <br></br> available online

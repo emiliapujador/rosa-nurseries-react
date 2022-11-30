@@ -1,3 +1,8 @@
+.outdoor-plants-container {
+  display: flex;
+  flex-direction: column;
+}
+
 .outdoor-plants-title-container {
   display: flex;
   flex-direction: row;

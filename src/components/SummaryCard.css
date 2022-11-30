@@ -79,3 +79,34 @@
 .summary-btn:active {
   background-color: #375748;
 }
+@media only screen and (max-width: 600px) {
+  .summary-container {
+    margin: 0;
+    align-self: center;
+    width: 100%;
+  }
+  .summary-title {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .summary-order-title {
+    margin-bottom: 10px;
+  }
+  .summary-order-caract {
+    font-size: 12px;
+    margin-bottom: 15px;
+  }
+  .summary-line {
+    max-width: 190px;
+    margin-bottom: 20px;
+  }
+  .summary-total {
+    font-size: 15px;
+  }
+  .summary-btn {
+    width: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}

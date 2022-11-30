@@ -73,7 +73,6 @@
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
-  line-height: 19px;
   color: #000000;
 }
 
@@ -82,8 +81,40 @@
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
-  line-height: 19px;
   color: #000000;
 
   align-self: flex-end;
+}
+@media only screen and (max-width: 600px) {
+  .bc-basket-card {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .bc-basket-text {
+    margin-left: 15px;
+  }
+  .bc-plant-img {
+    width: 90px;
+    height: 60px;
+  }
+  .bc-plant-name {
+    font-size: 15px;
+    line-height: 25px;
+  }
+  .bc-stock {
+    font-size: 13px;
+  }
+  .bc-quantity {
+    font-size: 11px;
+  }
+  .bc-quantity-btn {
+    height: 30px;
+    width: 30px;
+    font-size: 11px;
+  }
+  .bc-card-total-price {
+    font-size: 15px;
+  }
 }
