@@ -1,7 +1,9 @@
 .logo {
   height: 110px;
   display: flex;
+  margin-bottom: 10px;
 }
+
 .top-bar-section-search {
   display: flex;
   justify-content: flex-end;
@@ -10,7 +12,6 @@
 }
 .top-bar {
   display: flex;
-  height: 120px;
   width: 100%;
   justify-content: center;
 }
@@ -20,7 +21,7 @@
   width: 100%;
   background-color: #999999;
 }
-.nav {
+.nav-desktop {
   display: flex;
   height: 59.39px;
   align-items: center;
@@ -54,6 +55,26 @@
 .shop-icon {
   height: 20px;
 }
+
+.nav-mobile {
+  display: none;
+}
+
+.nav-mobile-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-mobile-menu-open {
+  margin-bottom: 16px;
+}
+
+.nav-png-menu {
+  height: 40px;
+  width: 40px;
+}
 /* end nav */
 
 @media screen and (max-width: 1200px) {
@@ -68,20 +89,27 @@
 }
 
 @media screen and (max-width: 700px) {
-  .nav {
-    flex-direction: column;
-    height: auto;
+  .nav-mobile {
+    display: block;
+  }
+  .nav-desktop {
+    display: none;
   }
 
-  .nav > * {
+  .nav-desktop > * {
     margin: 8px;
   }
 }
+
 @media only screen and (max-width: 600px) {
   .logo {
     height: 70px;
+    margin-bottom: 0px;
   }
   .top-bar {
     align-items: center;
+  }
+  .menu-shop-sing-in-icon {
+    margin-right: 5px;
   }
 }

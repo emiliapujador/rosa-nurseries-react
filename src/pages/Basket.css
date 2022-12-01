@@ -5,7 +5,15 @@
   justify-content: center;
   align-items: center;
 }
-
+.basket-title-empty {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  color: #243b30;
+  margin-top: 80px;
+  text-align: center;
+}
 .basket-text {
   font-family: "Playfair Display";
   font-style: normal;
@@ -15,7 +23,7 @@
   margin-top: 80px;
   text-align: center;
 }
-.line {
+.bkt-line {
   background-color: #bbbbbb;
   height: 1px;
   margin-left: 20px;
@@ -47,7 +55,7 @@
   color: #ffffff;
   margin-top: 50px;
   cursor: pointer;
-  margin-bottom: 430px;
+  margin-bottom: 500px;
 }
 .shop-button:active {
   background-color: #375748;
@@ -124,5 +132,29 @@
 
   .bkt-title-items {
     margin-bottom: 15px;
+  }
+  .basket-title-empty {
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #243b30;
+    margin-top: 80px;
+    text-align: center;
+  }
+  .bkt-line {
+    background-color: #bbbbbb;
+    height: 1px;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 70%;
+    max-width: 600px;
+    margin-top: 30px;
+  }
+  .shop-button {
+    margin-bottom: 350px;
+  }
+  .bkt-title-items {
+    margin-top: 10px;
   }
 }

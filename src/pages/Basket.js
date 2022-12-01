@@ -34,8 +34,8 @@ function Basket() {
     return (
       <main>
         <div className="bkt-empty-container">
-          <span className="basket-text">BASKET</span>
-          <div className="line"></div>
+          <span className="basket-title-empty">BASKET</span>
+          <div className="bkt-line"></div>
           <span className="basket-info">Your basket is empty</span>
           <Link to="/">
             <button className="shop-button">CONTINUE SHOPPING</button>

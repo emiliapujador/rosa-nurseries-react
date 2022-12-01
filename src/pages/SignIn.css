@@ -23,7 +23,7 @@ main {
   font-weight: 400;
   font-size: 32px;
   color: #243b30;
-  margin-top: 80px;
+  margin-top: 60px;
   text-align: center;
 }
 .sign-in-email {
@@ -111,8 +111,18 @@ main {
   color: #ffffff;
   cursor: pointer;
   margin-top: 20px;
-  margin-bottom: 220px;
+  margin-bottom: 300px;
 }
 .button-create-account:active {
   background-color: #375748;
+}
+@media only screen and (max-width: 600px) {
+  .text-sign-in {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  .text-help,
+  .new-account-text {
+    font-size: 15px;
+  }
 }

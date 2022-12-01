@@ -107,11 +107,19 @@ function App() {
 export default App;
 
 function ScrollToTop() {
-  const { pathname } = useLocation();
+  const location = useLocation();
+  const { pathname, hash } = location;
 
   useEffect(() => {
-    window.scrollTo({ top: 0, left: 0, behavior: "instant" });
-  }, [pathname]);
+    if (hash.length > 0) {
+      const el = document.getElementById(hash.slice(1));
+      if (el) {
+        el.scrollIntoView();
+      }
+    } else {
+      window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+    }
+  }, [pathname, hash]);
 
   return null;
 }
