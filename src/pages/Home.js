@@ -1,4 +1,4 @@
-import InfoHero from "../components/InfoHero";
+import AboutUsLanding from "../components/AboutUsLanding";
 import HomeCarousel from "../components/HomeCarousel";
 import OutdoorSection from "../components/OutdoorSection";
 import IndoorSection from "../components/IndoorSection";
@@ -10,7 +10,7 @@ function Home() {
   return (
     <>
       <HomeCarousel />
-      <InfoHero />
+      <AboutUsLanding />
       <IndoorSection />
       <OutdoorSection />
       <Newsletter />
