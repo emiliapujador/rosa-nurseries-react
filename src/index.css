@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 * {
   box-sizing: border-box;
 }
@@ -6,7 +10,7 @@ html,
 body {
   margin: 0px;
   padding: 0px;
-  background-color: #fff7ed;
+  background-color: #f7f7f7;
 }
 
 /* nav */

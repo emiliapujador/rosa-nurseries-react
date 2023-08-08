@@ -12,37 +12,37 @@ function Navbar() {
   };
 
   return (
-    <nav className="navigation-bar">
-      <div className="top-bar">
+    <nav className="p-[30px] md:p-[30px] lg:px-[100px] lg:py-[50px]">
+      <div className="flex justify-center">
         <Link to="/">
           <img
             id="logo-rosa"
-            className="logo"
+            className="h-[70px] w-auto lg:hidden  block md:h-[150px] md:mb-[30px]"
             src="/Images/Logo/Group 1.png"
             alt="Rosa Nurseries"
           />
         </Link>
       </div>
-      <div className="first-line"></div>
-      <div className="nav-mobile">
-        <div className="nav-mobile-row">
+      <div className="block md:hidden">
+        <div className="flex flex-row justify-between items-center">
           <img
-            className="nav-png-menu"
+            className="h-[40px] w-[40px]"
             onClick={toggle}
             src="/Images/icon-menu.png"
             alt="menu png"
           ></img>
-          <div className="menu-shop-sing-in-icon">
+
+          <div className="flex flex-row">
             <Link to="/sign-in">
               <img
-                className="sing-in-icon"
+                className="h-[15px] mr-[10px]"
                 src="/Images/sing-in-icon.png"
                 alt="Sign in icon"
               />
             </Link>
             <Link to="/basket">
               <img
-                className="shop-icon"
+                className="h-[20px]"
                 src="/Images/shop.png"
                 alt="Shop icon"
               />
@@ -50,75 +50,93 @@ function Navbar() {
           </div>
         </div>
         {menuOpen && (
-          <div className="nav-mobile-menu-open">
-            <p className="navigation-line">
-              <Link className="navigation-line" to="/about-us">
-                ABOUT US
+          <div className="">
+            <p className="flex justify-center flex-6 items-center text-[#243b30] font-medium	font-serif text-[16px] m-0 active:text-[#589578]">
+              <Link className="" to="/about-us">
+                About us
               </Link>
             </p>
 
-            <p className="navigation-line">
-              <Link to="/indoor-plants">INDOOR PLANTS</Link>
+            <p className="flex justify-center flex-6 items-center text-[#243b30] active:text-[#589578] font-medium	font-serif text-[16px] m-0">
+              <Link to="/indoor-plants">Indoor plants</Link>
             </p>
 
-            <p className="navigation-line">
-              <Link to="/outdoor-plants">OUTDOOR PLANTS</Link>
+            <p className="flex justify-center flex-6 items-center text-[#243b30] font-medium	font-serif text-[16px] m-0 active:text-[#589578]">
+              <Link to="/outdoor-plants">Outdoor plants</Link>
             </p>
 
-            <p className="navigation-line">
-              <Link className="navigation-line" to="/#opening-hours">
-                OPENING HOURS
+            <p className="flex justify-center flex-6 items-center text-[#243b30] active:text-[#589578] font-medium	font-serif text-[16px] m-0">
+              <Link className="" to="/#opening-hours">
+                Opening hours
               </Link>
             </p>
-            <p className="navigation-line">
-              <a className="navigation-line" href="/#contact-us">
-                CONTACT US
+            <p className="flex justify-center flex-6 items-center text-[#243b30] active:text-[#589578] font-medium	font-serif text-[16px] m-0">
+              <a
+                className="flex justify-center flex-6 items-center text-[#243b30] active:text-[#589578] font-medium	font-serif text-[16px] m-0"
+                href="/#contact-us"
+              >
+                Contact
               </a>
             </p>
           </div>
         )}
       </div>
-      <div className="nav-desktop">
-        <p className="navigation-line">
-          <Link className="navigation-line" to="/about-us">
-            ABOUT US
-          </Link>
-        </p>
-        <NavDropdown
-          className="dropdown navigation-line"
-          title="SHOP ONLINE"
-          id="nav-dropdown"
-        >
-          <NavDropdown.Item eventKey="4.1">
-            <Link to="/indoor-plants">Indoor plants</Link>
-          </NavDropdown.Item>
+      {/* desktop */}
 
-          <NavDropdown.Item eventKey="4.2">
-            <Link to="/outdoor-plants">Outdoor plants</Link>
-          </NavDropdown.Item>
-        </NavDropdown>
-        <p className="navigation-line">
-          <a className="navigation-line" href="/#opening-hours">
-            {" "}
-            OPENING HOURS
-          </a>
-        </p>
-        <p className="navigation-line">
-          <a className="navigation-line" href="/#contact-us">
-            {" "}
-            CONTACT US
-          </a>
-        </p>
-        <div className="navigation-line">
+      <div className="lg:flex lg:flex-row md:justify-between md:items-center">
+        <Link to="/">
+          <img
+            id="logo-rosa"
+            className="hidden lg:block lg:h-auto lg:max-w-[300px] md:pb-[30px]  md:hidden"
+            src="/Images/Logo/Group 1.png"
+            alt="Rosa Nurseries"
+          />
+        </Link>
+        <div className="hidden md:flex lg:flex h-auto md:flex-row lg:flex-row md:justify-center lg:justify-end lg:gap-[30px] md:self-center md:gap-[20px] md:items-center lg:items-center">
+          <p className="md:text-[20px] lg:text-[23px] md:text-[#243b30] md:font-serif md:active:text-[#589578] ">
+            <Link className="" to="/about-us">
+              About us
+            </Link>
+          </p>
+          <NavDropdown
+            className="lg:text-[23px] md:text-[20px] md:text-[#243b30] md:font-serif md:active:text-[#589578]"
+            title="Shop online"
+            id="nav-dropdown"
+          >
+            <NavDropdown.Item eventKey="4.1">
+              <Link to="/indoor-plants">Indoor plants</Link>
+            </NavDropdown.Item>
+
+            <NavDropdown.Item eventKey="4.2">
+              <Link to="/outdoor-plants">Outdoor plants</Link>
+            </NavDropdown.Item>
+          </NavDropdown>
+          <p className="md:text-[20px] lg:text-[23px] md:text-[#243b30] md:font-serif md:active:text-[#589578]">
+            <a className="" href="/#opening-hours">
+              {" "}
+              Opening hours
+            </a>
+          </p>
+          <p className="md:text-[20px] lg:text-[23px] md:text-[#243b30] md:font-serif md:active:text-[#589578]">
+            <a className="" href="/#contact-us">
+              {" "}
+              Contact us
+            </a>
+          </p>
+
           <Link to="/sign-in">
             <img
-              className="sing-in-icon"
+              className="md:h-[20px] md:w-auto"
               src="/Images/sing-in-icon.png"
               alt="Sign in icon"
             />
           </Link>
           <Link to="/basket">
-            <img className="shop-icon" src="/Images/shop.png" alt="Shop icon" />
+            <img
+              className="md:h-[25px]  md:w-auto"
+              src="/Images/shop.png"
+              alt="Shop icon"
+            />
           </Link>
         </div>
       </div>
