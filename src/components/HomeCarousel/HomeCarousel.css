@@ -21,11 +21,3 @@
   background-size: cover;
   background-position: center center;
 }
-
-@media only screen and (max-width: 600px) {
-  .hero1,
-  .hero2,
-  .hero3 {
-    height: 300px;
-  }
-}
