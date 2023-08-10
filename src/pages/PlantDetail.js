@@ -34,7 +34,7 @@ function PlantDetail() {
 
   return (
     <div>
-      <main className="container">
+      <main className="plantContainer">
         <div className="content">
           <div
             className="image-container"

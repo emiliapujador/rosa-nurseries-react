@@ -1,4 +1,3 @@
-import "./PlantsSection.css";
 import PlantCard from "./PlantCard";
 import { indoorPlants } from "../data";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
@@ -7,36 +6,22 @@ import PlantGrid from "./PlantGrid";
 function IndoorSection() {
   return (
     <>
-      <div className="plants-section">
-        <div className="indoor-column">
-          <div className="title-container">
-            <h2 className="indoor-plants-title">
-              Indoor plants
-              <br />
-              available online
-            </h2>
-          </div>
+      <div className="  pt-[50px] flex flex-col ">
+        <div className="flex flex-col container mx-auto px-[30px]">
+          <h2 className="text-[25px] text-darkGreen font-serif text-center pb-[25px]">
+            Indoor plants
+          </h2>
+          <p className="text-[18px] text-blackR text-center leading-normal">
+            Different shapes and sizes to light up every corner of your home.
+          </p>
         </div>
-        <div className="indoor-column">
-          <div className="title-container title-container-center">
-            <h2 className="plants-characteristics">
-              Different shapes and sizes to light
-              <br />
-              up every corner of your home
-            </h2>
-          </div>
+        <div className="container lg:mx-auto ">
+          <PlantGrid kind="indoor" />
         </div>
+        <Link to="/indoor-plants">
+          <span>VIEW MORE</span>
+        </Link>
       </div>
-      <div className="center-grid">
-        <PlantGrid kind="indoor" />
-      </div>
-      <Link to="/indoor-plants">
-        <div className="btn-view-more-container">
-          <div className="button-view-more">
-            <span>VIEW MORE</span>
-          </div>
-        </div>
-      </Link>
     </>
   );
 }

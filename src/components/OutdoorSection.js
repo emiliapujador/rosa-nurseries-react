@@ -5,36 +5,20 @@ import PlantGrid from "./PlantGrid";
 
 function OutdoorSection() {
   return (
-    <div>
-      <div className="plants-section">
-        <div className="indoor-column">
-          <div className="title-container">
-            <h2 className="indoor-plants-title">
-              Outdoor plants
-              <br />
-              available online
-            </h2>
-          </div>
-        </div>
-        <div className="indoor-column">
-          <div className="title-container title-container-center">
-            <h2 className="plants-characteristics">
-              Different foliage, sizes and heights
-              <br />
-              to embelish your garden
-            </h2>
-          </div>
-        </div>
+    <div className="pt-[50px] flex flex-col ">
+      <div className="flex flex-col container mx-auto px-[30px]">
+        <h2 className="text-[25px] text-darkGreen font-serif text-center pb-[25px]">
+          Outdoor plants
+        </h2>
+        <p className="text-[18px] text-blackR text-center leading-normal">
+          Different foliage, sizes and heights to embelish your garden
+        </p>
       </div>
-      <div className="center-grid">
+      <div className="container lg:mx-auto ">
         <PlantGrid kind="outdoor" />
       </div>
       <Link to="/outdoor-plants">
-        <div className="btn-view-more-container">
-          <div className="button-view-more">
-            <span>VIEW MORE</span>
-          </div>
-        </div>
+        <span>VIEW MORE</span>
       </Link>
     </div>
   );

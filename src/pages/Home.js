@@ -11,8 +11,8 @@ function Home() {
     <>
       <HomeCarousel />
       <AboutUsLanding />
-      <IndoorSection />
       <OutdoorSection />
+      <IndoorSection />
       <Newsletter />
       <Comments />
       <NurseryInfo />
