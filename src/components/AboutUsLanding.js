@@ -13,10 +13,10 @@ function AboutUsLanding() {
           />
         </div>
         <div className="flex flex-col md:flex-1">
-          <h2 className="font-serif text-[25px] self-center py-[30px] font-medium text-[#243B30] md:text-[30px] lg-text-[46px]">
+          <h2 className="font-serif text-[25px] self-center py-[30px] font-medium text-[#243B30] md:text-[30px] lg-text-[40px]">
             About us
           </h2>
-          <div className="text-[18px] text-[#2C2929] text-justify font-normal lg:text-[20px]">
+          <div className="text-[15px] md:text-[20px] lg:text-[25px] text-[#2C2929] text-justify font-normal ">
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -30,8 +30,8 @@ function AboutUsLanding() {
           </div>
 
           <p
-            className=" text-darkGreen font-serif text-[18px] self-center items-center
-            border-b-[1px] border-darkGreen max-w-[90px] mt-[20px] active:text-lightGreen hover:text-lightGreen lg:text-[20px] lg:max-w-[100px] font-light"
+            className=" text-darkGreen font-serif self-center items-center
+            border-b-[1px] border-darkGreen max-w-[90px] mt-[20px] active:text-lightGreen hover:text-lightGreen text-[15px] md:text-[16px] lg:text-[18px] lg:max-w-[100px] font-light"
           >
             Read more
           </p>
