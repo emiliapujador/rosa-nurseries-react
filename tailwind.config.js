@@ -7,6 +7,7 @@ module.exports = {
       lightGreen: "#589578",
       darkGreen: "#243B30",
       blackR: "#2C2929",
+      whiteR: "#F7F7F7",
     },
   },
   plugins: [],
