@@ -13,8 +13,9 @@ function Home() {
       <AboutUsLanding />
       <OutdoorSection />
       <IndoorSection />
-      <Newsletter />
       <Comments />
+      <Newsletter />
+
       <NurseryInfo />
     </>
   );

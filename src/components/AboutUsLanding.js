@@ -13,7 +13,7 @@ function AboutUsLanding() {
           />
         </div>
         <div className="flex flex-col md:flex-1">
-          <h2 className="font-serif text-[25px] self-center py-[30px] font-medium text-[#243B30] md:text-[30px] lg-text-[40px]">
+          <h2 className="font-serif text-[25px] self-center py-[30px] font-medium text-[#243B30] md:text-[30px] lg:text-[40px]">
             About us
           </h2>
           <div className="text-[15px] md:text-[20px] lg:text-[25px] text-[#2C2929] text-justify font-normal ">
