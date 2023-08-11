@@ -1,5 +1,3 @@
-import "./Comments.css";
-
 export default function Comments() {
   return (
     <div className="bg-[#E8ECED] flex flex-col justify-center items-center text-center gap-3  lg:gap-5 md:flex-col py-36 lg:py-52">

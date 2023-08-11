@@ -6,7 +6,7 @@ import PlantGrid from "./PlantGrid";
 function IndoorSection() {
   return (
     <>
-      <div className="  pt-[60px] flex flex-col px-[30px] md:pt-[60px] lg:pt-[150px] lg:px-[100px] ">
+      <div className="pb-[40px]  pt-[60px] flex flex-col px-[30px] md:pt-[60px] lg:pt-[150px] lg:px-[100px] ">
         <div className="flex flex-col container mx-auto ">
           <h2 className="text-[20px] md:text-[30px] lg:text-[40px] text-darkGreen font-serif text-center pb-[10px] lg:pb-[40px]">
             Indoor plants
@@ -20,7 +20,7 @@ function IndoorSection() {
         </div>
         <button className="mt-[30px] mb-[40px] md:mb-[70px] md:mt-[50px] lg:mt-[60px] lg:mb-[100px]">
           <Link to="/indoor-plants">
-            <span className="text-blackR md:mt-[40px]  text-[15px] md:text-[16px] lg:text-[18px] md:mb-[60px]  rounded border-solid border-darkGreen border-2 md:border-3 lg:border-4 max-w-[170px] lg:max-w-[400px] lg:px-[146px] lg:py-[20px] px-[30px] py-[10px] self-center hover:bg-darkGreen active:bg-darkGreen hover:text-whiteR ">
+            <span className="text-blackR  md:mt-[40px]  text-[15px] md:text-[16px] lg:text-[18px] md:mb-[60px]  rounded border-solid border-darkGreen border-2 md:border-3 lg:border-4 max-w-[170px] lg:max-w-[400px] lg:px-[146px] lg:py-[20px] px-[30px] py-[10px] self-center hover:bg-darkGreen active:bg-darkGreen hover:text-whiteR ">
               View more
             </span>
           </Link>

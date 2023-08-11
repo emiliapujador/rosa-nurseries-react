@@ -3,7 +3,7 @@ import "./SignIn.css";
 function SignIn() {
   return (
     <main>
-      <div className="big-container-sign-in">
+      <div className="flex flex-col">
         <div className="small-container-sign-in">
           <span className="text-sign-in">SIGN IN</span>
           <input
