@@ -18,7 +18,7 @@ function IndoorSection() {
         <div className="container lg:mx-auto lg:mb-[70px]">
           <PlantGrid kind="indoor" />
         </div>
-        <button className="mt-[30px] md:mt-[50px] lg:mt-[60px]">
+        <button className="mt-[30px] mb-[40px] md:mb-[70px] md:mt-[50px] lg:mt-[60px] lg:mb-[100px]">
           <Link to="/indoor-plants">
             <span className="text-blackR md:mt-[40px]  text-[15px] md:text-[16px] lg:text-[18px] md:mb-[60px]  rounded border-solid border-darkGreen border-2 md:border-3 lg:border-4 max-w-[170px] lg:max-w-[400px] lg:px-[146px] lg:py-[20px] px-[30px] py-[10px] self-center hover:bg-darkGreen active:bg-darkGreen hover:text-whiteR ">
               View more
