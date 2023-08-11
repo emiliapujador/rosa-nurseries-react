@@ -13,7 +13,9 @@ function Comments() {
             “ Excellent treatment by the employees. Incredible variety of
             plants. I will be back!”.
           </p>
-          <p>Jack Smith</p>
+          <p clasName="text-[13px] md:text-[18px] lg:text-[22px] text-blackR">
+            Jack Smith
+          </p>
         </div>
       </div>
     </div>
